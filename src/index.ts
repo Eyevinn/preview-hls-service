@@ -15,6 +15,11 @@ export const handler: ALBHandler = async (event: ALBEvent): Promise<ALBResult> =
         response = await handlePreviewVideoRequest(event);
       } else if (event.path.match(/\/image$/) && event.queryStringParameters["u"]) {
         response = await handlePreviewImageRequest(event);
+      } else if (event.path.match(/^\/$/)) {
+        response = {
+          statusCode: 200,
+          body: "OK",
+        }
       } else {
         response = generateErrorResponse({
           code: 404,
