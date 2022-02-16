@@ -7,18 +7,18 @@
     "build": "tsc --project ./",
     "postversion": "git push && git push --tags",
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Warn: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eyevinn/lambda-preview-hls.git"
+    "url": "git+https://github.com/Eyevinn/preview-hls-service.git"
   },
   "author": "Eyevinn Technology AB <work@eyevinn.se>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Eyevinn/lambda-preview-hls/issues"
+    "url": "https://github.com/Eyevinn/preview-hls-service/issues"
   },
-  "homepage": "https://github.com/Eyevinn/lambda-preview-hls#readme",
+  "homepage": "https://github.com/Eyevinn/preview-hls-service#readme",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.92",
     "@types/node": "^17.0.18",
