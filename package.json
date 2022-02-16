@@ -1,0 +1,33 @@
+{
+  "name": "preview-hls-service",
+  "version": "0.1.0",
+  "description": "Service to generate preview assets from HLS",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc --project ./",
+    "postversion": "git push && git push --tags",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eyevinn/lambda-preview-hls.git"
+  },
+  "author": "Eyevinn Technology AB <work@eyevinn.se>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eyevinn/lambda-preview-hls/issues"
+  },
+  "homepage": "https://github.com/Eyevinn/lambda-preview-hls#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.92",
+    "@types/node": "^17.0.18",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@eyevinn/dev-lambda": "^0.1.1",
+    "@eyevinn/m3u8": "^0.5.2",
+    "debug": "^4.3.3",
+    "node-fetch": "^2.6.6"
+  }
+}
