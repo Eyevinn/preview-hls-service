@@ -14,7 +14,7 @@ const fetchAndParseMediaManifest = (url: string): Promise<any> => {
       if (m) {
         basePath = m[1] + "/";
       }
-      mediaManifest.items.PlaylistItem.map(item => item.set("uri", basePath + item.get("uri")));
+      mediaManifest.items.PlaylistItem.map(item => item.set("uri", item.get("uri").match(/^http/) ? item.get("uri") : basePath + item.get("uri")));
       resolve(mediaManifest);
     });
     parser.on("error", err => {
