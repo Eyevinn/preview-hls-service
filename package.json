@@ -28,6 +28,6 @@
     "@eyevinn/dev-lambda": "^0.1.1",
     "@eyevinn/m3u8": "^0.5.2",
     "debug": "^4.3.3",
-    "node-fetch": "^2.6.6"
+    "node-fetch": "^2.6.7"
   }
 }
