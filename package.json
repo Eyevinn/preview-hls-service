@@ -16,7 +16,7 @@
   "author": "Eyevinn Technology AB <work@eyevinn.se>",
   "license": "MIT",
   "engines": {
-    "node": ">=24.22.1"
+    "node": "^22.23.4 || >=24.22.1"
   },
   "bugs": {
     "url": "https://github.com/Eyevinn/preview-hls-service/issues"
